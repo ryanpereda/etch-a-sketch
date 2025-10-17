@@ -4,15 +4,20 @@ body {
 }
 
 .container {
-
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 800px;
 }
 
 .divrow {
+    flex: 100%;
     display: flex;
-
 }
 
 .divsquare {
-    flex: 1 1 10%;
+    flex: 1;
     background-color: silver;
+    border-style:solid;
+    border-color: black;
 }

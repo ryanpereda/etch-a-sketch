@@ -1,13 +1,14 @@
 let container = document.querySelector(".container")
 
-let divRow = document.createElement("div")
-divRow.className = "divrow"
-
-for (let i = 0; i < 10; i++) {
-    let divSquare = document.createElement("div")
-    divSquare.className = "divsquare"
-    divSquare.textContent = i
-    divRow.appendChild(divSquare)
+for (let i = 0; i < 16; i++) {
+    let divRow = document.createElement("div")
+    divRow.className = "divrow"
+    for (let j = 0; j < 16; j++) {
+        let divSquare = document.createElement("div")
+        divSquare.className = "divsquare"
+        divSquare.textContent = i
+        divRow.appendChild(divSquare)
+    }
+    container.appendChild(divRow)
 }
 
-container.appendChild(divRow)

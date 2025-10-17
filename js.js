@@ -8,7 +8,9 @@ for (let i = 0; i < 16; i++) {
         divSquare.className = "divsquare"
         divSquare.textContent = i
         divRow.appendChild(divSquare)
+        divSquare.addEventListener('mouseenter', () => {
+            divSquare.style.cssText = 'background-color: black;'
+        })
     }
     container.appendChild(divRow)
 }
-

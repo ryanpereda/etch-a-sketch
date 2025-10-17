@@ -18,6 +18,11 @@ body {
 .divsquare {
     flex: 1;
     background-color: silver;
-    border-style:solid;
-    border-color: black;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 800px;
 }
